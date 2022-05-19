@@ -32,14 +32,14 @@ class _BodyBagState extends State<BodyBag> with SingleTickerProviderStateMixin {
         child: Column(
           children: [
             topText(width, height),
-            Divider(
+           const Divider(
               color: Colors.grey,
             ),
             bagModels.isEmpty
                 ? EmptyList()
                 : Column(children: [
                     mainListView(width, height),
-                    SizedBox(
+              const SizedBox(
                       height: 12,
                     ),
                     bottominfo(width, height),

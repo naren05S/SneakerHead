@@ -7,13 +7,13 @@ PreferredSize? customAppBarProfile() {
   return PreferredSize(
     preferredSize: Size.fromHeight(60),
     child: AppBar(
-      leading: Padding(
-        padding: EdgeInsets.only(top: 8.0),
-        child: Icon(
-          Icons.arrow_back_ios,
-          color: darkTextColor,
-        ),
-      ),
+      // leading: Padding(
+      //   padding: EdgeInsets.only(top: 8.0),
+      //   child: Icon(
+      //     Icons.arrow_back_ios,
+      //     color: darkTextColor,
+      //   ),
+      // ),
       centerTitle: true,
       elevation: 0,
       backgroundColor: Colors.transparent,
