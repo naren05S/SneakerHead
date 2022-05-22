@@ -10,7 +10,7 @@ class MyBagScreen extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         backgroundColor: backgroundColor,
-        appBar: customAppBarBag(context),
+        // appBar: customAppBarBag(context),
         body: BodyBag(),
       ),
     );

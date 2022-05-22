@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, sized_box_for_whitespace
 
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:sneakers_app/animation/fadeanimation.dart';
 import 'package:sneakers_app/constanst.dart';
 import 'package:sneakers_app/models/model.dart';
@@ -27,6 +28,29 @@ class _BodyProfileState extends State<BodyProfile> {
       // color: Colors.red.withOpacity(0.4),
       child: Column(
         children: [
+          Padding(
+            padding: EdgeInsets.only(top: 8.0,left: 10,bottom:15),
+            child: Row(children: [
+              Expanded(
+                flex: 5,
+                child: Center(
+                  child: Text(
+                    "My Profile",
+                    style: TextStyle(
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold,
+                      color: darkTextColor,
+                    ),
+                  ),
+                ),
+              ),
+              Spacer(),
+              Icon(
+                Icons.more_vert,
+                color: darkTextColor,
+              ),
+            ],),
+          ),
           topProfilePicAndName(width, height),
           SizedBox(
             height: 10,
@@ -61,13 +85,13 @@ class _BodyProfileState extends State<BodyProfile> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Edward Larry",
+                "Mac Silva",
                 style: TextStyle(fontSize: 22, fontWeight: FontWeight.w800),
               ),
               Text(
-                "Junior Developer",
+                "Senior Software Developer",
                 style: TextStyle(
-                    fontSize: 17,
+                    fontSize: 12,
                     fontWeight: FontWeight.w500,
                     color: Colors.grey),
               ),

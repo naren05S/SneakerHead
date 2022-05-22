@@ -36,6 +36,44 @@ class _BodyState extends State<Body> {
     final height = MediaQuery.of(context).size.height;
     return Column(
       children: [
+        Padding(
+          padding: EdgeInsets.only(top: 8.0,left: 10),
+          child: Row(children: [
+            Expanded(
+              flex: 2,
+              child: Center(
+                child: Text(
+                  "Discover",
+                  style: TextStyle(
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold,
+                    color: darkTextColor,
+                  ),
+                ),
+              ),
+            ),
+            Spacer(),
+            IconButton(
+              icon: FaIcon(
+                FontAwesomeIcons.search,
+                color: darkTextColor,
+                size: 25,
+              ),
+              onPressed: () {},
+            ),
+            SizedBox(
+              width: 10,
+            ),
+            IconButton(
+              icon: FaIcon(
+                FontAwesomeIcons.bell,
+                color: darkTextColor,
+                size: 25,
+              ),
+              onPressed: () {},
+            ),
+          ],),
+        ),
         topCategoriesWidget(width, height),
         SizedBox(
           height: 10,

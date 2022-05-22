@@ -24,28 +24,26 @@ class _BodyBagState extends State<BodyBag> with SingleTickerProviderStateMixin {
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
     final height = MediaQuery.of(context).size.height;
-    return SingleChildScrollView(
-      child: Container(
-        margin: const EdgeInsets.all(10),
-        width: width,
-        height: height / 1.14,
-        child: Column(
-          children: [
-            topText(width, height),
-           const Divider(
-              color: Colors.grey,
-            ),
-            bagModels.isEmpty
-                ? EmptyList()
-                : Column(children: [
-                    mainListView(width, height),
-              const SizedBox(
-                      height: 12,
-                    ),
-                    bottominfo(width, height),
-                  ])
-          ],
-        ),
+    return Container(
+      margin: const EdgeInsets.all(10),
+      width: width,
+      height: height / 1.14,
+      child: Column(
+        children: [
+          topText(width, height),
+         const Divider(
+            color: Colors.grey,
+          ),
+          bagModels.isEmpty
+              ? EmptyList()
+              : Column(children: [
+                  mainListView(width, height),
+            const SizedBox(
+                    height: 12,
+                  ),
+                  bottominfo(width, height),
+                ])
+        ],
       ),
     );
   }
@@ -86,7 +84,7 @@ class _BodyBagState extends State<BodyBag> with SingleTickerProviderStateMixin {
       delay: 3,
       child: MaterialButton(
         minWidth: width / 1.2,
-        height: height / 15,
+        height: height / 19,
         color: materialButtonColor,
         onPressed: () {},
         child: Text(
@@ -247,7 +245,7 @@ class _BodyBagState extends State<BodyBag> with SingleTickerProviderStateMixin {
   bottominfo(width, height) {
     return Container(
       width: width,
-      height: height / 7,
+      height: height / 20,
       // color: Colors.blue,
       child: Column(
         children: [
