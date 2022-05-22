@@ -7,7 +7,10 @@ the UI of this project is not my idea and I found it on the Dribble website but 
 
 I Hope you Like this Project❤!
 ## ScreenShots
-
+![](assets/images/LoginSS.png)
+![](assets/images/DashboardSS.png)  
+![](assets/images/DeatilSS.png)
+![](assets/images/ProfileSS.png)
 
 # ⚠️ Essential Packages 
 * font_awesome_flutter: ^9.2.0
