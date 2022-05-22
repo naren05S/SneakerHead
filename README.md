@@ -1,9 +1,8 @@
 # SneakerHead
 # Sneakers shop application using Flutter + Animations
 ## Description
-I made this app as practice in my Flutter 100 days challenge for myself.
-in this project, I used animation as the first time I used that.
-the UI of this project is not my idea and I found it on the Dribble website but that was simple and I decided to change it and improve that.
+In this project, I used animation as the first time.
+The UI of this project is not my idea and I found it online but I change it and improved it according to me to get the appearance of the application. 
 
 I Hope you Like this Project❤!
 ## ScreenShots
